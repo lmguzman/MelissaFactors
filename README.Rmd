@@ -1,0 +1,30 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+This is a practice package for [STAT 545](http://stat545-ubc.github.io).
+
+This is just the demo Jenny is posting for students to consult / start with for their homework.
+
+Here's how to use the `foofactors` package.
+
+
+```{r}
+#install_github("STAT545/foofactors")
+library(foofactors)
+fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+freq_out(iris$Species)
+```
+
