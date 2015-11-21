@@ -1,21 +1,20 @@
-Package: foofactors
+Package: Mfactors
 Title: Make factors less annoying
 Version: 0.0.0.9000
-Authors@R: person("Jennifer", "Bryan", role=c("aut", "cre"),
-  email = "jenny@stat.ubc.ca")
-Description: Factors have driven people to extreme measures, like ordering
-    custom conference ribbons and laptop stickers to express how HELLNO we
-    feel about stringsAsFactors. And yet, sometimes you need them. Can they
-    be made less maddening? Let's find out.
+Authors@R: person("Melissa", "Guzman", role=c("aut", "cre"),
+  email = "guzman@zoology.ubc.ca")
+Description: Factors do very funny things. Importing into R a data frame usually converts the characters into factors. Also, normally you cant bind factors. This package lets you work with factors more easily.
 Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
-RoxygenNote: 5.0.1.9000
-Suggests: testthat,
+RoxygenNote: 5.0.0
+Suggests:
+    testthat,
     knitr,
     rmarkdown
-Imports: dplyr
-URL: https://github.com/STAT545-UBC/foofactors
-BugReports: https://github.com/STAT545-UBC/foofactors/issues
+Imports:
+    dplyr
+URL: https://github.com/lmguzman/MelissaFactors
+BugReports: https://github.com/lmguzman/MelissaFactors/issues
 VignetteBuilder: knitr

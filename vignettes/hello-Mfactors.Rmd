@@ -1,10 +1,10 @@
 ---
-title: "Intro to foofactors"
-author: "Jenny Bryan"
+title: "Intro to Mfactors"
+author: "Melissa Guzman"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Intro to foofactors}
+  %\VignetteIndexEntry{Intro to Mfactors}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -13,7 +13,7 @@ Throwing stuff from the README in here!
 
 ```{r}
 #install_github("STAT545/foofactors")
-library(foofactors)
+library(Mfactors)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 freq_out(iris$Species)
 ```
