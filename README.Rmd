@@ -55,9 +55,14 @@ freq_out(iris$Species)
 
 ```{r}
 x <- c('candy', 'wont', 'make', 'me', 'sick')
+```
+check out the levels 
+
+```{r}
 levels(factor(x))
 levels(fac_as_is(x))
 ```
+
 
 ### fread_csv
 
@@ -69,9 +74,13 @@ tf <- tempfile()
 write.csv(tenletters, tf)
 
 character_reading <- fread_csv(tf, check.factor = TRUE)
-str(character_reading)
 
 factor_reading <- fread_csv(tf, check.factor = FALSE)
+```
+
+Compare the structure when check.factor is TRUE or FALSE
+```{r}
+str(character_reading)
 str(factor_reading)
 ```
 
