@@ -4,18 +4,16 @@
 #'
 #' @param x a vector of data
 #'
-#' @return a factor
+#' @param ... Name-value pairs of summary functions like factor()
+#'
+#' @return factor
 #' @export
-#'
 #' @examples
-#'
 #' a <- c('sam', 'harry', 'andy')
-#' f_as_is(a)
+#' fac_as_is(a)
 #' factor(a)
-#'
-f_as_is <- function(x, ...){
+fac_as_is <- function(x, ...){
   level <- unique(x)
   x <- factor(x, levels = level, ...)
-  assertthat::assert_that(is.factor(x))
   return(x)
 }

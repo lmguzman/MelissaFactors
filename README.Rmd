@@ -16,7 +16,6 @@ knitr::opts_chunk$set(
 
 This is a practice package for [STAT 545](http://stat545-ubc.github.io).
 
-This is just the demo Jenny is posting for students to consult / start with for their homework.
 
 Here's how to use the `Mfactors` package.
 
